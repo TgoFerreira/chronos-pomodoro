@@ -1,28 +1,28 @@
-.defaultinput {
-  margin: 3.2rem 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding-top: 3.2rem;
+.input {
+  background-color: transparent;
+  text-align: center;
+  font-size: 1.8rem;
+  padding: 0.8rem;
+  color: var(--text-default);
+  outline: none;
+
+  border: 0.2rem solid transparent;
+  border-bottom: 0.2rem solid var(--primary);
+  transition: all 0.3s ease-in-out;
 }
 
-.defaultinputLink {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: 4.2rem;
-  font-weight: bold;
-  text-decoration: none;
-  color: var(--primary);
+.input:focus {
+  border-radius: 0.8rem;
+  border: 0.2rem solid var(--primary);
 }
 
-.defaultinputLink:hover {
-  filter: brightness(50%);
-  transition: all 0.12s ease-in-out;
+.input::placeholder {
+  color: var(--gray-500);
+  font-size: 1.4rem;
+  font-style: italic;
 }
 
-.defaultinputLink svg {
-  width: 6.4rem;
-  height: 6.4rem;
+.input:disabled {
+  border-bottom: 0.2rem solid var(--disabled);
+  color: var(--text-muted);
 }
