@@ -7,6 +7,8 @@ import { Menu } from '@/components/Menu';
 import { Countdown } from '@/components/Countdown';
 import { DefaultInput } from '@/components/DefaultInput';
 import { Cycles } from '@/components/Cycles';
+import { DefaultButton } from '@/components/DefaultButton';
+import { CirclePlayIcon, PlayCircleIcon, StopCircleIcon } from 'lucide-react';
 
 export default function Home() {
   return (
@@ -37,9 +39,15 @@ export default function Home() {
           </div>
           <div className='formRow'>
             <Cycles />
-            <p>0 0 0 0 0 0 0</p>
+          </div>
+          <div className='formRow'>
+            <DefaultButton icon={<StopCircleIcon />} color='red' />
           </div>
         </form>
+        <div className='footer'>
+          <a href=''>Entenda a técnica pomodoro 🍎</a>
+          <a href=''>Chronos Pomodoro &copy; 2025 - Feito com 💚</a>
+        </div>
       </Container>
     </>
   );
